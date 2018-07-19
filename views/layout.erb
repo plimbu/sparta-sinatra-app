@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/css/global.css">
+  <!-- dynamic title <%= @title %>, saying its not html or css but ruby is what %% does and = is ruby code to show on html -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script  type="text/javascript" src="js/global.js">
+<link rel="stylesheet"  src="css/global.css">
+
+</script>
+
+<!--   <title><%= @pokemon %></title> -->
+</head>
+<body>
+
+
+<!-- injecting navigation partial into template -->
+<%= erb(:"partials/navigation", :layout => false) %>
+
+<!-- This will render the template of whatever was rendered/hit in the controller -->
+<%= yield %>
+
+</body>
+</html>
