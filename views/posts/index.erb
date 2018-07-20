@@ -1,10 +1,30 @@
 
     <!-- loop through our pokemon -->
     <% @pokemons.each do |pokemon| %>
-      <div class="">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+
         <h1><%= pokemon.pokemon %></h1>
       <!-- loops through pokemon id and pokemon name, uses id to link to pokemons specific page and pokemon name to describe the button -->
-        <button type="button" name="button">   <a href="/<%= pokemon.id %>"><%= pokemon.pokemon %> page</a>  </button>
-        <p><%= pokemon.body %></p><br>
+        <!-- <button type="button" name="button">   <a href="/<%= pokemon.id %>"><%= pokemon.pokemon %> page</a>  </button> -->
       </div>
+
+      <div class="col-md-6">
+
+        <img src="img/<%= pokemon.id %>.gif" alt="pokemon img"></img><br>
+        <button type="button" name="button">    <a href="<%= pokemon.id %>"><%= pokemon.pokemon %> page </a>
+
+</button>
+<p><%= pokemon.body %></p>
+
+      </div>
+
+        </div>
+
+
+
+
+    </div>
+
       <% end %>

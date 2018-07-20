@@ -1,11 +1,16 @@
+/* golbal css file is uaually included on all pages */
 
-body, html {
+body {
   font-family: "Oswald", sans-serif;
   padding: 150px;
-  background-color: blue;
+  text-decoration: none;
+   /* background: url('../img/bg.jpg');  */
+  background-repeat: no-repeat;
+  background-size: cover;
+
 
 }
-a{
-  text-decoration: none;
 
+a {
+  color: #91972A
 }

@@ -5,13 +5,13 @@
 <!-- if id is empty it will go to root otherwise it will get the post depending on id -->
 <form class ="" action="/<%= @pokemon.id %>" method = "POST">
   <div class="">
-    <label>Games</label>
+    <label>Pokemon Name</label>
     <input type="text" value ="<%= @pokemon.pokemon %>" name="pokemon" placeholder="enter a Pokemon name">
   </div>
 
   <div class="">
-    <label for="">Body</label>
-    <textarea name="body" placeholder ="Enter the body of the post" ><%= @pokemon.body %></textarea>
+    <label for="">Pokemon Description</label>
+    <textarea name="body" placeholder ="Enter description of your pokemon" ><%= @pokemon.body %></textarea>
   </div>
 
   <div class="">
