@@ -1,18 +1,15 @@
+<h1><%= @pokemon.pokemon %></h1>
+<p><%= @pokemon.body %></p>
 
+<!-- we dont want bottom ruby code to be shown up on page so we don't put equals sign in ice cream cone, bottom code is logic so we don't show it up on screen -->
 
+<form class="" action="/<%= @pokemon.id %>" method="POST">
+  <div class="">
+    <input type="submit" value="delete" name="title" placeholder="enter a title">
+    <!-- override every single time to make post into a delete request -->
+    <button type="button" name="button">
+      <a href="/<%= @pokemon.id %>/edit">edit</a>
+    </button>
+    <input type="hidden" name="_method" value="DELETE">
 
-    <h1><%= @pokemon.body %></h1>
-    <p><%= @pokemon.pokemon %></p>
-   <!-- we dont want bottom ruby code to be shown up on page so we don't put
-   equals sign in ice cream cone, bottom code is logic so we don't show it up on screen
-    -->
-
-    <form class ="" action="/<%= @pokemon.id %>" method = "POST">
-    <div class="">
-      <input type="submit" value ="delete" name="title" placeholder="enter a title">
-        <!-- override every single time to make post into a delete request -->
-        <button type="button" name="button">         <a href="/<%= @pokemon.id %>/edit">edit</a>
-</button>
-      <input type="hidden" name="_method" value="DELETE">
-
-    </div>
+  </div>
